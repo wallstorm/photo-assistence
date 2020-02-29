@@ -1,0 +1,16 @@
+.container {
+    display: inline;
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.container .row {
+    margin-left: 100px;
+    margin-right: 135px;
+    background: rgb(231, 244, 253);
+}
+
+.container h2 {
+    margin-left: 100px;
+    color: black;
+}

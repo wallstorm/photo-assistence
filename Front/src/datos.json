@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "titulo": "Casamiento",
+        "imagen": "foto00"
+    },
+    {
+        "id": 1,
+        "titulo": "Bautismo",
+        "imagen": "foto01"
+    },
+    {
+        "id": 2,
+        "titulo": "Egresados",
+        "imagen": "foto02"
+    },
+    {
+        "id": 3,
+        "titulo": "Fiesta de 15",
+        "imagen": "foto03"
+    },
+    {
+        "id": 4,
+        "titulo": "Ejecutivas",
+        "imagen": "foto04"
+    },
+    {
+        "id": 5,
+        "titulo": "Artisticas",
+        "imagen": "foto05"
+    },
+    {
+        "id": 5,
+        "titulo": "Artisticas",
+        "imagen": "foto05"
+    }
+]
