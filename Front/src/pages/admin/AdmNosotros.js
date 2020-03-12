@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Admin from "../Admin";
+import Admin from ".";
 import "./AdmNosotros.css";
 
 class AdmNosotros extends Component {

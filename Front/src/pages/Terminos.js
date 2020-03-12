@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import HeaderLogin from "./globals/HeaderLogin/HeaderLogin";
-import Footer from "./globals/Footer"
+import Header from "../components/globals/Header";
+import Footer from "../components/globals/Footer"
 class Terminos extends Component {
     render() {
         return(
             <div>
-                <HeaderLogin />
+                <Header />
                 <h1>Términos y condiones</h1>
                 <p>bla bla bla bla bla bla bla bla bla lbaadsasdasd
                 bla bla bla bla bla bla bla bla bla lbaadsasdasd

@@ -6,12 +6,12 @@ import { compose } from "redux";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 
-import "./signup.css";
+import "./css/signup.css";
 import Profile from "./Profile";
-import Footer from "./globals/Footer"
-import Header from "./globals/Header";
+import Footer from "../components/globals/Footer"
+import Header from "../components/globals/Header";
 import * as actions from "../actions";
-import CustomInput from "./CustomInput";
+import CustomInput from "../components/CustomInput";
 
 class KSignUp extends Component {
     state = {
@@ -32,24 +32,22 @@ class KSignUp extends Component {
         // We need to call some action
         await this.props.signUp(formData);
         //if (!this.props.errorMessage) {
-            // this.props.history.push("/");
-        // }
+             //this.props.history.push("/");
+        //}
     }
-
     responseGoogle = async (res) => {
         console.log("responseGoogle:", res);
         await this.props.oauthGoogle(res.accessToken);
-        // if (!this.props.errorMessage) {
-            // this.props.history.push("/");
-        // }
+        if (!this.props.errorMessage) {
+            this.props.history.push("/");
+        }
     }
-
     responseFacebook = async (res) => {
         console.log("responseFacebook:", res);
         await this.props.oauthFacebook(res.accessToken);
-        // if (!this.props.errorMessage) {
-            // this.props.history.push("/");
-        // }
+        if (!this.props.errorMessage) {
+            this.props.history.push("/");
+        }
     }
 
     render() {

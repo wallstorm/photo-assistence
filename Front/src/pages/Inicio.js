@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import Header from "./globals/Header";
-import Footer from "./globals/Footer";
+import Header from "../components/globals/Header";
+import Footer from "../components/globals/Footer";
 
 class Inicio extends Component {
     render() {

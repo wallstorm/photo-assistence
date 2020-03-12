@@ -5,26 +5,26 @@ import { Provider } from "react-redux";
 import reduxThunk from "redux-thunk";
 import axios from "axios";
 
-import Inicio from "./components/Inicio";
-import Nosotros from "./components/Nosotros";
-import Contacto from "./components/Contacto"
-import KSignIn from "./components/KSignIn";
-import KSignUp from "./components/KSignUp"
-import Servicios from "./components/Servicios"
+import Inicio from "./pages/Inicio";
+import Nosotros from "./pages/Nosotros";
+import Contacto from "./pages/Contacto"
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp"
+import Servicios from "./pages/Servicios"
 import Error from "./components/Error";
-import Admin from "./components/Admin";
 import SingleServicio from "./components/SingleServicio";
-import Fotografos from "./components/Fotografos";
-import Terminos from "./components/Terminos";
-import Profile from "./components/Profile";
+import Fotografos from "./pages/Fotografos";
+import Terminos from "./pages/Terminos";
+import Profile from "./pages/Profile";
 
 import Header from "./components/globals/Header";
 import HeaderLogin from "./components/globals/HeaderLogin/HeaderLogin";
 import Footer from "./components/globals/Footer"
-import AdmNosotros from "./components/admin/AdmNosotros";
+
+import Admin from "./pages/Admin";
 import reducers from "./reducers";
 import authGuard from "./components/HOCs/authGuard";
-import offComponent from "./components/HOCs/offComponent";
+import test from "./components/HOCs/login-reg-hidden";
 
 const jwtToken = localStorage.getItem("JWT_TOKEN");
 axios.defaults.headers.common["Authorization"] = jwtToken;
@@ -58,14 +58,13 @@ class Router extends Component {
                                     )
                                 }} />
                                 <Route path="/fotografos" component={Fotografos} />
-                                <Route path="/signin" component={offComponent(KSignIn)} />
-                                <Route path="/signup" component={offComponent(KSignUp)} />
+                                <Route path="/signin" component={test(SignIn)} />
+                                <Route path="/signup" component={test(SignUp)} />
                                 <Route path="/profile" component={authGuard(Profile)} />
                                 <Route exact path="/terminosycondiones" component={Terminos} />
 
                                 {/* Rutas admin */}
                                 <Route path="/admin" component={Admin} />
-                                <Route path="/admins/nosotros" component={AdmNosotros} />
 
                                 <Route component={Error} />
 

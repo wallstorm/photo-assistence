@@ -6,11 +6,11 @@ import { compose } from "redux";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 
-import Footer from "./globals/Footer"
-import Header from "./globals/Header";
+import Footer from "../components/globals/Footer"
+import Header from "../components/globals/Header";
 import * as actions from "../actions";
-import CustomInput from "./CustomInput";
-import "./signin.css";
+import CustomInput from "../components/CustomInput";
+import "./css/signin.css";
 
 class KSignIn extends Component {
 
@@ -24,17 +24,17 @@ class KSignIn extends Component {
     responseGoogle = async (res) => {
         await this.props.oauthGoogle(res.accessToken);
         console.log("responseGoogle:", res);
-        //if (!this.props.errorMessage) {
-            //this.props.history.push("/");
-        //}
+        if (!this.props.errorMessage) {
+            this.props.history.push("/");
+        }
     }
 
     responseFacebook = async (res) => {
         console.log("responseFacebook:", res);
         await this.props.oauthFacebook(res.accessToken);
-        //if (!this.props.errorMessage) {
-            //this.props.history.push("/");
-        //}
+        if (!this.props.errorMessage) {
+            this.props.history.push("/");
+        }
     }
 
     render() {

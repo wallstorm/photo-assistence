@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Header from "./globals/Header";
-import Footer from "./globals/Footer";
+import Header from "../components/globals/Header";
+import Footer from "../components/globals/Footer";
 
 import * as actions from "../actions/index";
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Servicio from "./Servicio";
-import Header from "./globals/Header";
-import Footer from "./globals/Footer"
-import "./servicios.css"
+import Servicio from "../components/Servicio";
+import Header from "../components/globals/Header";
+import Footer from "../components/globals/Footer"
+import "./css/servicios.css"
 
 class Servicios extends Component {
     

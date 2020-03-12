@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "./globals/Header";
-import Footer from "./globals/Footer"
-import "./contacto.css"
+import Header from "../components/globals/Header";
+import Footer from "../components/globals/Footer"
+import "./css/contacto.css"
 import axios from "axios";
 
 class Contacto extends Component {

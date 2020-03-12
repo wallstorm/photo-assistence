@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom";
-import "./admin.css";
+import "./css/admin.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faHome, faCamera, faUsers, faBriefcase, faIdBadge, faUserCircle, faShoePrints } from "@fortawesome/free-solid-svg-icons"
@@ -15,7 +15,7 @@ class Admin extends Component {
                     <ul>
                         <li><Link to={""}><FontAwesomeIcon icon={faHome} className="ico"/>Inicio</Link></li>
                         <li><Link to={""}><FontAwesomeIcon icon={faCamera} className="ico"/>Servicios</Link></li>
-                        <li><Link to={"/admins/nosotros"}><FontAwesomeIcon icon={faUsers} className="ico"/>Nosotros</Link></li>
+                        <li><Link to={""}><FontAwesomeIcon icon={faUsers} className="ico"/>Nosotros</Link></li>
                         <li><Link to={""}><FontAwesomeIcon icon={faIdBadge} className="ico"/>Contacto</Link></li>
                         <li><Link to={""}><FontAwesomeIcon icon={faBriefcase} className="ico"/>¿Sos fotográfo?</Link></li>
                         <li><Link to={""}><FontAwesomeIcon icon={faUserCircle} className="ico"/>Cuentas</Link></li>
